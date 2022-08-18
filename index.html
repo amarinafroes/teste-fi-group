@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="alinha.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./alinha.css">
     <title>pagina de login</title>
 </head>
 <body>
     <div class="conteudo">
         <div class="esquerda">
             <div class="titulo">
-                <h1 id="wel">Welcome Back!</h1>
+                <h1 id="wel">Welcome Back Again!</h1>
                 <p id="um">To keep connect with us please login with your personal info</p>
                 <button id="in">SIGN IN</button>
             </div>
@@ -40,16 +40,17 @@
                        
                     <input type="text" class="form" placeholder=" Nome"> <br>
 
-                    <input type="email" class="form" placeholder="Email"><br>
+                    <input type="email" class="form" id="email" placeholder="Email"><br>
     
-                    <input type="password" class="form" autocomplete="off" placeholder="Senha"> <br>
+                    <input type="password" class="form" id="senha" autocomplete="off" placeholder="Senha"> <br>
     
-                    <button id="up">SIGN UP</button>
+                    <button id="up" onclick="autenticacao()">SIGN UP</button>
                 </form>
                 
             
             </div>
         </div>
     </div>
+    <script src="index.js"></script>
 </body>
 </html>
