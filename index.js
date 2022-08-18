@@ -1,26 +1,84 @@
-const usuario = "marina@gmail.com"
-const password = 12345
+var lista = [];
 
+const objs = [ 
+    {
+        "email":"marina@gmail.com",
+        "senha": 12345
+
+    },
+    {
+        "email":"gabriela@gmail.com",
+        "senha": 6789
+
+    },
+    {
+        "email":"joana@gmail.com",
+        "senha": 101112
+
+    },
+    {
+        "email":"raquel@gmail.com",
+        "senha": 131415
+
+    },
+    {
+        "email":"andre@gmail.com",
+        "senha": 161718
+
+    },
+    {
+        "email":"roberto@gmail.com",
+        "senha": 192021
+
+    },
+    {
+        "email":"joao@gmail.com",
+        "senha": 222324
+
+    },
+    {
+        "email":"marcelino@gmail.com",
+        "senha": 252627
+
+    },
+    {
+        "email":"nunes@gmail.com",
+        "senha": 282930
+
+    },
+    {
+        "email":"joabe@gmail.com",
+        "senha": 313233
+
+    }
+
+]
+
+ 
 
 
 function autenticacao(){
-    var email = document.getElementById("email").value;
+    var usuario = document.getElementById("email").value;
     console.log(email);
 
-    var senha = document.getElementById("senha").value;
-    console.log(senha);
+    var password = document.getElementById("senha").value;
+    var numero = 0;
+   while (numero < 10) {
+    
 
-    if (email == usuario ){
+    if (objs[numero].email == usuario && objs[numero].senha == password ){
         
-        if( senha == password){
-            window.open("outra.html");
-        }
-        else{
-            alert("Senha Invalida");
-        }
+        window.open("outra.html");
+        break;
+       
     }
     else{
-        alert("Email Invalido");
+        console.log(objs[numero])
+        numero +=1;
     }
+
+    
+   }
+    
 }
     
