@@ -1,0 +1,134 @@
+@media screen and (max-width:1500px){
+    .conteudo{
+        
+        margin-left: 200px;
+        margin-top: 170px;
+    }
+}
+@media screen and (max-width:1334px){
+    .conteudo{
+       
+        margin-left: 100px;
+        margin-top: 170px;
+    }
+}
+@media screen and (max-width:1080px){
+    .conteudo{
+        
+        margin-left: 0px;
+        margin-top: 170px;
+    }
+}
+@media screen and (max-width:900px){
+    .conteudo{
+        flex-direction: column;
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+}
+@media screen and (max-width:900px){
+   
+    .esquerda{
+        border-radius: 15px;
+        padding: 100px;
+        margin-left: 30px;
+        margin-top: 50px;
+}
+    .direita{
+        border-radius: 15px;
+        padding: 100px;
+        margin-left: 30px;
+        margin-top: 0px;
+        width: 250px;
+    }
+    input{
+        margin-left: 50px;
+    }
+}
+@media screen and (max-width:900px){
+   
+    .esquerda{
+        border-radius: 15px;
+        padding: 100px;
+        margin-left: 0px;
+        margin-top: 50px;
+}
+    .direita{
+        border-radius: 15px;
+        padding: 100px;
+        margin-left: 0px;
+        margin-top: 0px;
+        margin-bottom: 50px;
+        width: 250px;
+    }
+    input{
+        margin-left: 50px;
+    }
+        *{
+            margin: 0;
+        }
+}
+@media screen and (max-width:460px){
+   
+    .esquerda{
+        border-radius: 15px;
+        padding: 100px;
+        margin-left: 0px;
+        margin-top: 50px;
+        width: 200px;
+}
+    .direita{
+        border-radius: 15px;
+        padding: 100px;
+        margin-left: 0px;
+        margin-top: 0px;
+        margin-bottom: 50px;
+        width: 200px;
+    }
+    #icone{
+        display: none;
+      }
+      #dois{
+        display: none;
+      }
+    input{
+        margin-left: 15px;
+    }
+        *{
+            margin: 0;
+        }
+}
+@media screen and (max-width:404px){
+   
+    .esquerda{
+        border-radius: 15px;
+        padding: 50px;
+        margin-left: 0px;
+        margin-top: 50px;
+        width: 200px;
+}
+    .direita{
+        border-radius: 15px;
+        padding: 100px;
+        margin-left: 0px;
+        margin-top: 0px;
+        margin-bottom: 50px;
+        width:100px;
+    }
+    #create{
+        margin-bottom: 15px;
+    }
+    #icone{
+      display: none;
+    }
+    #dois{
+        display: none;
+      }
+    input{
+        margin-left: 0px;
+        padding-left: 0;
+    }
+        *{
+            margin: 0;
+        }
+}
