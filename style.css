@@ -1,8 +1,47 @@
 
-
+*{
+    margin: 0;
+    padding: 0;
+}
 body{
-    background-color: rgb(167, 214, 236);
     font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 5rem;
+    
+    transition: background 0.5s linear, color 0.5s linear;
+
+    
+}
+body.dark{
+    background-color: black;
+    color: black
+
+
+}
+.container{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+label{
+    
+    border-radius: 40%;
+    display: inline;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.5s linear;
+
+}
+body.dark label{
+   
+}
+#btn{
+    visibility: hidden;
 }
 .conteudo{
     display: flex;
@@ -12,31 +51,40 @@ body{
     
    
 }
+
 .esquerda{
-    background-color: rgb(66, 134, 235) ;
+    background-color:#9966cc;
    flex-direction: column;
    display: flex;
    padding: 100px;
    border-top-left-radius: 5%;
    border-bottom-left-radius: 5%;
    margin-left: 30px;
-   color: rgb(167, 214, 236);
+   color: white;
    text-align: center;
    margin-top: 50px;
    width: 250px;
 }
+body.dark div.esquerda{
+    background-color:#360f5e;
+    color: black;
+}
    
 .direita{
-   background-color: white;
+   background-color: rgb(236, 167, 230);
    flex-direction: column;
    display: flex;
    padding: 100px;
    border-top-right-radius: 5%;
    border-bottom-right-radius: 5%;
-   color: rgb(167, 214, 236);
+   color: white;
    text-align: center;
    margin-top: 50px;
    width: 400px;
+}
+body.dark div.direita{
+    background-color: rgb(172, 48, 161);
+    color: black;
 }
  
 #wel{
@@ -47,13 +95,18 @@ body{
     
 }
 .login{
-    color: rgb(167, 214, 236);
+    color: rgb(236, 167, 230);
     display: flex;
     flex-direction: column;
 }
+body.dark #in{
+    color:black;
+    background-color:#360f5e;
+    border-color: black;
+}
 #in{
     
-    background-color: rgb(66, 134, 235) ;
+    background-color:#9966cc;
     border-color: white;
     border-radius: 16px;
     padding-left: 20px;
@@ -63,30 +116,45 @@ body{
    
     
     margin-top: 5px;
-    color: rgb(167, 214, 236);
+    color: rgb(236, 167, 230);
 }
 button{
     width: 150px;
 }
 #up{
-    border: 1px solid  rgb(66, 134, 235);
+    border: 1px solid #9966cc;
     border-radius: 16px;
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 5px;
     padding-bottom: 5px;
-    background-color: rgb(66, 134, 235);
-    color:rgb(167, 214, 236);
+    background-color:  rgb(236, 167, 230);
+    color: #9966cc;
+}
+body.dark #up{
+    color:black;
+    background-color: rgb(172, 48, 161);
+    border-color: black;
 }
 #up:hover{
-    background-color:  rgb(167, 214, 236);;
-    color:rgb(66, 134, 235) ;
+    background-color:  #9966cc;
+    color:  rgb(236, 167, 230) ;
+}
+body.dark #up:hover{
+    color:black;
+    background-color:#360f5e;
+    border-color: black;
 }
 
 #in:hover{
-    background-color:  rgb(167, 214, 236);
-    color:rgb(66, 134, 235);
+    background-color:  rgb(236, 167, 230);
+    color:#9966cc;
 }
+body.dark #in:hover{
+    color:black;
+    background-color: rgb(172, 48, 161);
+    border-color: black;
+} 
 .form{
     display: flex;
     flex-direction: column;
@@ -95,9 +163,21 @@ button{
     margin-right: 15px;
    
 }
-i{
+a{
     text-decoration: none;
 }
 input{
     margin-left: 100px;
 }
+.bi-moon-fill{
+    color: white
+}
+body.dark .bi-moon-fill{
+    color: orange
+}   
+.bi-brightness-high-fill{
+    color: orange
+}   
+body.dark .bi-brightness-high-fill{
+    color: black
+}   
